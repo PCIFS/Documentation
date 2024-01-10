@@ -3,3 +3,8 @@
 ## Web & Intranet Development 
 
 Whenever a customer needs help from the Web & Intranet Development team, they will create a ticket via the Help Desk. Here we document all required types of tickets that could be recieved this way, what they mean, and what information is necessary from the customer.
+
+Incident = Break/Fix
+Request
+Change
+Workflow / Project
