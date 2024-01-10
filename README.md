@@ -4,7 +4,7 @@
 
 # Documentation
 
-This repository is to document all Policies, Standards, Processes & Prodcedures of the Web & Intranet division of the PCI Corporate IT Department. This documentation is meant to always remain _up-to-date_ and _accurate_, and should be *quickly* updated should any change result in any document listed here becoming obsolete.
+This repository is to document all Policies, Standards, Processes & Procedures of the Web & Intranet division of the PCI Corporate IT Department. This documentation is meant to always remain _up-to-date_ and _accurate_, and should be *quickly* updated should any change result in any document listed here becoming obsolete.
 
 Should any Documentation be added to this repository, please update this README with a link and short description below.
 
