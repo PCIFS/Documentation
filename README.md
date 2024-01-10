@@ -1,6 +1,6 @@
 
 
-![Poarch Creek Indians Federal Services Logo](https://pcifs.com/user/images/assets/SdWFPGMerCAgnyu.svg)
+![Poarch Creek Indians Federal Services Logo](https://pcifs.com/user/images/pcifs-logo-with-text-for-light-bg.svg)
 
 # Documentation
 
