@@ -34,9 +34,8 @@ Changes to an existing web property after approval is gained and a ticket create
 1. Now, the github Issue can be closed so that the team is notified, and the SysAid ticket can be marked closed as well. A link to the merge commit in github should be added to the notes on the SysAid ticket when closing.
 <br/>
 <br/>
-______
+
 __IMPORTANT!__ -- Any changes that require documentation being updated must have either the documentation updated as part of that changeset, or a PR for the Documentation updated submitted SIMULTANEOUSLY. Otherwise the PR will be denied.
-______
 
 
 
