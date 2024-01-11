@@ -17,7 +17,7 @@ Wesley Hall | Website & Intranet Developer | whall@pcifs.com  | (251) 359-3751
 
 Should the requesting user not be on this list, the request should be forwarded to the entire list of authorized employees (with the requesting user copied) and approval confirmed before any work is done. At that point, a ticket can be created. The ticket # should be included on any commit messages related to that change and the SysAid ticket should be fully linked in any Pull Requests to the main branch resulting from the ticket.
 
-## Change Requests
+### Change Requests
 Changes to an existing web property after approval is gained and a ticket created in SysAid move as follows:
 
 1. An issue should be made in Github, attached to the affected repository. If this is a part of a larger Project, an Action Item should be created in that Project & Linked to this newly created Issue.
