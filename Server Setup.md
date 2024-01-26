@@ -29,11 +29,16 @@ curl -sS https://webi.sh/gh | sh
 source ~/.config/envman/PATH.env
 ```
 
-Now, we have to authenticate with Github and clone two of our helper repositories.
+Authenticate with Github (will require 2FA using the website) and clone two of our helper repositories.
 
 ```
 gh auth login
 gh repo clone PCIFS/Configuration ~/config
 gh repo clone PCIFS/Scripts ~/scripts
 chmod +x ~/scripts/*
+```
+
+Finish Setting up ZSH
+```
+~/scripts/setup-zsh
 ```
