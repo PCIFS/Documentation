@@ -18,3 +18,4 @@ Related, other repositories exist for useful helper [Scripts](https://github.com
 |  [Dev Workstation Specifications](/Dev%20Workstation%20Specifications.md)| List of required software, secrets, scripts, etc & their locations / configuration            |    1/10/2024          |
 | [Sysaid Ticket Types](/Sysaid%20Ticket%20Types.md) | Different types of SysAid Tickets that pertain to the Web Team, with their description and requirements. | 1/10/2024 |
 |[Development Lifecycle](/Development%20Lifecycle.md) | Explanation of the Development Lifecycle Procedures from Customer Request to Production commit | 1/11/2024 |
+|[Server Setup](/ServerSetup.md) | How our production / staging / dev web servers were set up, step by step. | 1/26/2024 |
