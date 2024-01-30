@@ -31,6 +31,7 @@ sudo usermod -a -G apache ec2-user
 sudo chown -R /var/www ec2-user:apache
 sudo dnf install python3-pip python3-pyOpenSSL
 sudo dnf install python3-certbot-apache
+pip install certbot
 certbot-3 --apache
 ```
 
