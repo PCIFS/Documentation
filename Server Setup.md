@@ -29,6 +29,9 @@ curl -sS https://webi.sh/gh | sh
 source ~/.config/envman/PATH.env
 sudo usermod -a -G apache ec2-user
 sudo chown -R /var/www ec2-user:apache
+sudo dnf install python3-pip python3-pyOpenSSL
+sudo dnf install python3-certbot-apache
+certbot-3 --apache
 ```
 
 Authenticate with Github (will require 2FA using the website) and clone two of our helper repositories.
