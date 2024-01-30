@@ -32,7 +32,6 @@ sudo chown -R /var/www ec2-user:apache
 sudo dnf install python3-pip python3-pyOpenSSL
 sudo dnf install python3-certbot-apache
 pip install certbot
-certbot-3 --apache
 ```
 
 Authenticate with Github (will require 2FA using the website) and clone two of our helper repositories.
@@ -43,6 +42,13 @@ gh repo clone PCIFS/Configuration ~/config
 gh repo clone PCIFS/Scripts ~/scripts
 chmod +x ~/scripts/*
 ```
+
+Create an SSL cert for localhost and for each virtualhost
+```
+sudo openssl req -x509 -sha256 -nodes -newkey rsa:2048 -days 365 -keyout localhost.key -out /etc/pki/tls/certs/localhost.crt
+sudo certbot-3 --apache
+```
+
 
 Finish Setting up ZSH
 ```
