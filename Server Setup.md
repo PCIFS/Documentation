@@ -12,7 +12,7 @@ Associate an elastic IP with it.
 
 ```
 sudo dnf update
-sudo dnf -y install zsh git util-linux-user httpd php-fpm wget php-mysqli php-json php php-devel php-zip php-gd
+sudo dnf -y install zsh git util-linux-user httpd mod_ssl php-fpm wget php-mysqli php-json php php-devel php-zip php-gd
 git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
 mkdir ~/.linuxbrew/bin
 ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin/brew
