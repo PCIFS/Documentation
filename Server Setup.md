@@ -51,24 +51,12 @@ pull in website repositories and set up apache configuration
 Create an SSL cert for localhost and for each virtualhost
 
 ```
-    1  sudo python3 -m venv /opt/certbot/
-    2  sudo /opt/certbot/bin/pip install --upgrade pip
-    3  sudo /opt/certbot/bin/pip install certbot certbot-apache
-    4  sudo ln -s /opt/certbot/bin/certbot /usr/bin/certbot
-    5  sudo certbot --apache
-    6  cd ~/config
-    7  cd httpd
-    8  ls
-    9  cd conf.d.staging
-   10  ls
-   11  rm -rf ssl.conf ssl.conf.rpmnew
-   12  ls
-   13  sudo certbot --apache
-   14  ls
-   15  rm -rf mediafusion.studio.conf
-   16  ls
-   17  sudo certbot --apache
-   18  echo "0 0,12 * * * root /opt/certbot/bin/python -c 'import random; import time; time.sleep(random.random() * 3600)' && sudo certbot renew -q" | sudo tee -a /etc/crontab > /dev/null
+sudo python3 -m venv /opt/certbot/
+sudo /opt/certbot/bin/pip install --upgrade pip
+sudo /opt/certbot/bin/pip install certbot certbot-apache
+sudo ln -s /opt/certbot/bin/certbot /usr/bin/certbot
+sudo certbot --apache
+echo "0 0,12 * * * root /opt/certbot/bin/python -c 'import random; import time; time.sleep(random.random() * 3600)' && sudo certbot renew -q" | sudo tee -a /etc/crontab > /dev/null
 ```
 
 Finish Setting up ZSH
