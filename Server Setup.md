@@ -28,12 +28,11 @@ Amazon Linux 2023 AMI 2023.3.20240122.0 x86_64 HVM kernel-6.1
 After the instance is up and running, the following changes are made to the image mentioned above.
 
 ```
-curl -sS https://webi.sh/gh | sh	
-source ~/.config/envman/load.sh
 sudo dnf update
 sudo dnf -y install zsh git util-linux-user httpd mod_ssl php-fpm wget php-mysqli php-json php php-devel php-zip php-gd python3 python3-pip python3-pyOpenSSL augeas-libs
-pip install certbot
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+curl -sS https://webi.sh/gh | sh	
+source ~/.config/envman/load.sh
 ```
 Authenticate with Github (will require 2FA using the website) and clone two of our helper repositories.
 
