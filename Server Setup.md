@@ -34,11 +34,6 @@ sudo dnf update
 sudo dnf -y install zsh git util-linux-user httpd mod_ssl php-fpm wget php-mysqli php-json php php-devel php-zip php-gd python3 python3-pip python3-pyOpenSSL augeas-libs
 pip install certbot
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-nvm install node
-nvm use node
 ```
 Authenticate with Github (will require 2FA using the website) and clone two of our helper repositories.
 
@@ -49,9 +44,9 @@ gh repo clone PCIFS/Scripts ~/scripts
 chmod +x ~/scripts/*
 
 ```
-pull in 
+pull in website repositories and set up apache configuration
 ```
-
+~/scripts/init-new-web-server
 ```
 Create an SSL cert for localhost and for each virtualhost
 
