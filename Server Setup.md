@@ -74,7 +74,7 @@ sudo ln -s /opt/certbot/bin/certbot /usr/bin/certbot
 sudo certbot --apache
 ```
 
-> Here, you'll recieve a few prompts.
+> Here, you'll recieve a few prompts:
 > 
 > For "Enter email address", we generally use:
 >  __ceida_web@pcicie.com__
