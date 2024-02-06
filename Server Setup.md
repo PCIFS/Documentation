@@ -60,9 +60,9 @@ gh repo clone PCIFS/Configuration ~/config
 gh repo clone PCIFS/Scripts ~/scripts
 chmod +x ~/scripts/*
 ```
-pull in website repositories and set up apache configuration
+pull in website repositories and set up apache configuration, replace SERVER_TYPE in this command with either 'prod','dev', or 'staging' (without quotes) depending on the type of server you are creating. 
 ```
-~/scripts/init-new-web-server
+~/scripts/init-new-web-server SERVER_TYPE
 ```
 Create an SSL cert for localhost and for each virtualhost
 
