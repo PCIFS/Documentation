@@ -25,7 +25,8 @@ Amazon Linux 2023 AMI 2023.3.20240122.0 x86_64 HVM kernel-6.1
     - Choose your newly created instance in the Instance field.
     - Click the Associate button at the bottom of screen.
 
-After the instance is up and running, login to the server using ssh via your keypair specified above
+After the instance is up and running, login to the server using ssh via your keypair specified above:
+
 ```
 ssh -i "C:\Path\To\My\Key.pem" ec2-user@INSTANCEPUBLICIP
 ```
