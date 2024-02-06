@@ -40,14 +40,25 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 curl -sS https://webi.sh/gh | sh	
 source ~/.config/envman/load.sh
 ```
-Authenticate with Github (will require 2FA using the website) and clone two of our helper repositories.
+Authenticate with Github (will require 2FA using the website)... 
 
 ```
 gh auth login
+```
+> - Select Github.com
+> - Select HTTPS
+> - Select "Login With a web browser"
+> - You will be given a code. Copy this Code and press enter.
+> - The browser will fail to open, but navigate to (https://github.com/login/device)[https://github.com/login/device], login as PCIFS, and enter the code there.
+> - Click "Continue"
+> - Click "Authorize github"
+> - The command should complete in your terminal window.
+  
+...and clone two of our helper repositories.
+```
 gh repo clone PCIFS/Configuration ~/config
 gh repo clone PCIFS/Scripts ~/scripts
 chmod +x ~/scripts/*
-
 ```
 pull in website repositories and set up apache configuration
 ```
@@ -61,6 +72,24 @@ sudo /opt/certbot/bin/pip install --upgrade pip
 sudo /opt/certbot/bin/pip install certbot certbot-apache
 sudo ln -s /opt/certbot/bin/certbot /usr/bin/certbot
 sudo certbot --apache
+```
+
+> Here, you'll recieve a few prompts.
+> 
+> For "Enter email address", we generally use:
+>  __ceida_web@pcicie.com__
+> 
+> "Please read the terms of Service..."
+> Y
+> 
+> "Would you be willing...."
+> N
+> 
+> "Which names would you like to activate HTTPS for?...."
+> [Press enter]
+
+Enable auto-renewal of the certificates using a cron-job
+```
 echo "0 0,12 * * * root /opt/certbot/bin/python -c 'import random; import time; time.sleep(random.random() * 3600)' && sudo certbot renew -q" | sudo tee -a /etc/crontab > /dev/null
 ```
 
