@@ -47,6 +47,7 @@ gh auth login
 ```
 > - Select Github.com
 > - Select HTTPS
+> - "Authenticate with your github credentials?" Select Yes
 > - Select "Login With a web browser"
 > - You will be given a code. Copy this Code and press enter.
 > - The browser will fail to open, but navigate to (https://github.com/login/device)[https://github.com/login/device], login as PCIFS, and enter the code there.
