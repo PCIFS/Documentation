@@ -75,7 +75,7 @@ sudo certbot --apache
 > Here, you'll recieve a few prompts:
 > 
 > For "Enter email address", we generally use:
->  __ceida_web@pcicie.com__
+>  __cieda_web@pcicie.com__
 > 
 > "Please read the terms of Service..."
 > Y
