@@ -96,3 +96,35 @@ Finish Setting up ZSH
 ```
 ~/scripts/setup-zsh
 ```
+
+Create an admin.yaml user file, using the password stored in dashlane under the name "GRAV MASTER PASS":
+```
+ /var/www/pcifs.com/grav/bin/plugin login new-user
+```
+
+> __Enter a username:__ admin
+> 
+> __Enter a password:__ [PASSWORD STORED IN DASHLANE UNDER "GRAV MASTER PASS"]
+> 
+> __Repeat the password:__ [PASSWORD STORED IN DASHLANE UNDER "GRAV MASTER PASS"]
+> 
+> __Enter an email:__ cieda_web@pcicie.com
+> 
+> __Enter a language abbreviation:__ en
+> 
+> __Please Choose a Set of Permissions:__ [a] Admin Access
+> 
+> __Enter a fullname:__ PCIFS Administrator
+> 
+> __Enter a title:__ PCIFS Administrator
+> 
+> __Please choose a state for the account:__ enabled
+
+You should see a message: "Success! User admin created."
+
+Now run the script that will add this new admin user to every other website on the server.
+```
+~/scripts/create_admin_users
+```
+
+
