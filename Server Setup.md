@@ -54,9 +54,7 @@ gh auth login
   
 ...and clone two of our helper repositories.
 ```
-gh repo clone PCIFS/Configuration ~/config
-gh repo clone PCIFS/Scripts ~/scripts
-chmod +x ~/scripts/*
+gh repo clone PCIFS/Configuration ~/config && gh repo clone PCIFS/Scripts ~/scripts && chmod +x ~/scripts/*
 ```
 pull in website repositories and set up apache configuration, replace SERVER_TYPE in this command with either 'prod','dev', or 'staging' (without quotes) depending on the type of server you are creating. 
 ```
