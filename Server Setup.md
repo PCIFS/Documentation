@@ -124,7 +124,7 @@ You should see a message: "Success! User admin created."
 
 Now run the script that will add this new admin user to every other website on the server.
 ```
-~/scripts/create_admin_users
+~/scripts/create-admin-users
 ```
 
 
