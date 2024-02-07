@@ -63,11 +63,7 @@ pull in website repositories and set up apache configuration, replace SERVER_TYP
 Create an SSL cert for localhost and for each virtualhost
 
 ```
-sudo python3 -m venv /opt/certbot/
-sudo /opt/certbot/bin/pip install --upgrade pip
-sudo /opt/certbot/bin/pip install certbot certbot-apache
-sudo ln -s /opt/certbot/bin/certbot /usr/bin/certbot
-sudo certbot --apache
+sudo python3 -m venv /opt/certbot/ && sudo /opt/certbot/bin/pip install --upgrade pip && sudo /opt/certbot/bin/pip install certbot certbot-apache && sudo ln -s /opt/certbot/bin/certbot /usr/bin/certbot && sudo certbot --apache
 ```
 
 > Here, you'll recieve a few prompts:
