@@ -102,8 +102,7 @@ Finish Setting up ZSH
 
 Create an admin.yaml user file, using the password stored in dashlane under the name "GRAV MASTER PASS":
 ```
-cd /var/www/pcifs.com/grav
-bin/plugin login new-user
+cd /var/www/pcifs.com/grav && bin/plugin login new-user
 ```
 
 > __Enter a username:__ admin
