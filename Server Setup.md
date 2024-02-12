@@ -130,11 +130,3 @@ Now run the script that will add this new admin user to every other website on t
 ```
 ~/scripts/create-admin-users
 ```
-
-Setup apache as a service and always start at boot time
-
-```
-sudo chkconfig httpd on
-```
-
-
