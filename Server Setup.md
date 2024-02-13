@@ -46,6 +46,16 @@ curl -sS https://webi.sh/gh | sh
 source ~/.config/envman/load.sh
 ```
 
+Add ec2-user to the apache group, change /var/www's permissions, logout
+```
+sudo usermod -a -G apache ec2-user && sudo chown -R ec2-user:apache /var/www && exit
+```
+
+Log back in, using same command as before:
+```
+ssh -i "C:\Path\To\My\Key.pem" ec2-user@INSTANCEPUBLICIP
+```
+
 Authenticate with Github (will require 2FA using the website)... 
 
 ```
