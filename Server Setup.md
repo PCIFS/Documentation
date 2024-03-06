@@ -139,8 +139,3 @@ Now run the script that will add this new admin user to every other website on t
 ```
 ~/scripts/create-admin-users
 ```
-Change the permissions of the php-fpm directories
-
-```
-sudo chmod -R 777 /run/php-fpm/
-```
