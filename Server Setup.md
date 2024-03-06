@@ -14,8 +14,8 @@ Amazon Linux 2023 AMI 2023.3.20240122.0 x86_64 HVM kernel-6.1
 5. Select your generated Key Pair (or go and create one now and return here if you don't see one to select)
 6. In Network Settings, click "Create Security Group" and check the following boxes:
     - Allow SSH traffic from Anywhere
-    - Allow HTTPS traffic from Anywhere
-    - Allow HTTP traffic from Anywhere
+    - Allow HTTPS traffic from the internet
+    - Allow HTTP traffic from the internet
 8. Everything else can be left default. Select Launch Instance.
 9. Attach the correct elastic IP to the new instance.
     - Go to the Elastic IPS tab on the left sidebar
