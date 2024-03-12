@@ -16,7 +16,7 @@ Amazon Linux 2023 AMI 2023.3.20240122.0 x86_64 HVM kernel-6.1
     - Allow SSH traffic from Anywhere
     - Allow HTTPS traffic from the internet
     - Allow HTTP traffic from the internet
-8. Everything else can be left default. Select Launch Instance.
+8. In "Configure Storage" Create a 50GB GP3 Volume
 9. Attach the correct elastic IP to the new instance.
     - Go to the Elastic IPS tab on the left sidebar
     - Select the Correct IP to attach  to new server
