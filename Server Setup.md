@@ -10,7 +10,7 @@ Amazon Linux 2023 AMI 2023.3.20240122.0 x86_64 HVM kernel-6.1
 1. From the ec2 dashboard, click "Launch Instance"
 2. Give the instance a name, ie. "production-web-server"
 3. Select Amazon Linux from the "Quick Start" Section of Application and OS Images (AMI) Section
-4. Instance Type -  t3.small
+4. Instance Type -  t3.large
 5. Select your generated Key Pair (or go and create one now and return here if you don't see one to select)
 6. In Network Settings, click "Create Security Group" and check the following boxes:
     - Allow SSH traffic from Anywhere
