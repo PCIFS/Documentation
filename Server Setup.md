@@ -75,7 +75,7 @@ gh auth login
 ```
 gh repo clone PCIFS/Configuration ~/config && gh repo clone PCIFS/Scripts ~/scripts && chmod +x ~/scripts/*
 ```
-Clone all our website repositories, set up apache configuration, and fix permissions. Replace ___SERVER_TYPE__ in this command with either 'prod','dev', or 'staging' (without quotes) depending on the type of server you are creating. This step can take quite a long time, upwards of an hour. 
+Clone all our website repositories, set up apache configuration, and fix permissions. Replace __SERVER_TYPE__ in this command with either 'prod','dev', or 'staging' (without quotes) depending on the type of server you are creating. This step can take quite a long time, upwards of an hour. 
 ```
 ~/scripts/init-new-web-server SERVER_TYPE
 ```
